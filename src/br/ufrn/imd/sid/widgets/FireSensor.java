@@ -17,6 +17,7 @@ public class FireSensor extends Widget {
 	}
 
 	private void initAtributtes() {
+		init();
 		if (functionsDescritions == null) {
 			functionsDescritions = new FunctionDescriptions();
 		}
