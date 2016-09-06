@@ -5,15 +5,23 @@ import context.arch.service.helper.FunctionDescriptions;
 import context.arch.storage.Attribute;
 import context.arch.widget.Widget;
 
-public class FireSensor extends Widget {
 
-	public static final String CLASSNAME = FireSensor.class.getName();
+/**
+ * 
+ * Class to define a fire sensor.
+ * 
+ * @author nelson
+ */
+public class FireSensorWidget extends Widget {
+
+	public static final String CLASSNAME = FireSensorWidget.class.getName();
 
 	private FunctionDescriptions functionsDescritions;
 
-	public FireSensor(String emplacement) {
+	public FireSensorWidget(String emplacement) {
 		super(emplacement, CLASSNAME);
 		initAtributtes();
+		start(true);
 	}
 
 	private void initAtributtes() {
@@ -27,7 +35,7 @@ public class FireSensor extends Widget {
 
 	
 	/**
-	 * Definindo os atributos do sensor de fogo.
+	 * Defining attributes for fire sensor.
 	 * */
 	protected void init() {
 		// non-constant attributes

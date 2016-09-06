@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 
 import br.ufrn.imd.sid.services.BombeirosService;
-import br.ufrn.imd.sid.widgets.FireSensor;
+import br.ufrn.imd.sid.widgets.FireSensorWidget;
 import context.arch.discoverer.Discoverer;
 import context.arch.enactor.Enactor;
 import context.arch.widget.Widget;
@@ -24,7 +24,7 @@ public class SIDApplication {
 	
 	public SIDApplication() {
 		// Instanciando o Widget do Sensor
-		fireSensor = new FireSensor("Centro da Cidade");
+		fireSensor = new FireSensorWidget("Centro da Cidade");
 		
 		// Instancinado o Service dos Bombeiros
 		bombeirosService = new BombeirosService(fireSensor);
